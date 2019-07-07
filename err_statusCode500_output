@@ -1,0 +1,27 @@
+serverless invoke local --function create --path mocks/create-event.json
+Serverless: Bundling with Webpack...
+Time: 1901ms
+Built at: 07/06/2019 7:13:12 PM
+        Asset      Size  Chunks             Chunk Names
+    create.js    10 KiB  create  [emitted]  create
+create.js.map  6.96 KiB  create  [emitted]  create
+Entrypoint create = create.js create.js.map
+[./create.js] 2.32 KiB {create} [built]
+[./libs/dynamodb-lib.js] 467 bytes {create} [built]
+[./libs/response-lib.js] 760 bytes {create} [built]
+[aws-sdk] external "aws-sdk" 42 bytes {create} [built]
+[babel-runtime/core-js/json/stringify] external "babel-runtime/core-js/json/stringify" 42 bytes {create} [built]
+[babel-runtime/helpers/asyncToGenerator] external "babel-runtime/helpers/asyncToGenerator" 42 bytes {create} [built]
+[babel-runtime/regenerator] external "babel-runtime/regenerator" 42 bytes {create} [built]
+[source-map-support/register] external "source-map-support/register" 42 bytes {create} [built]
+[uuid] external "uuid" 42 bytes {create} [built]
+{
+    "statusCode": 500,
+    "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true
+    },
+    "body": "{\"status\":false}"
+}
+
+
